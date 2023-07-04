@@ -4,6 +4,9 @@
         --header-height:70px;
         --navbar-height:0px;
     }
+    .header_cart-wrap:active .header__cart-list{
+        display: block;
+    }
     .moblie-category{
         display: block;
         padding: 2px;
