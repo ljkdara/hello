@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         body{
+            min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+         }
+       
+            body div {
+                margin: auto;
+            }
+            .btn{
+                display: inline-block;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding: 12px 38px;
+                border-radius: 50px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: opacity 2s;
+                min-width: 120px;
+            }
+            .btn:hover{
+                opacity: 0.5;
+            }
+            /* mau nut */
+            .btn--success{
+                background-color: #71be34;
+            }
+            .btn--danger{
+                background-color:#ffb702 ;
+            }
+            .btn--warn{
+                background-color:#ff6732 ;
+            }
+            .btn + .btn {
+                margin-left: 16px;
+
+            }
+            .btn--disabled{
+                opacity: 0.5!important;cursor: default;
+            }
+            .btn--size-s{
+                padding: 8px 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button  class="btn btn--success "> go to next approval</button >
+            <button  class="btn btn--warn">  ok</button >
+            <button  class="btn btn--danger"> Try again</button >
+                
+        </div>
+       
+    </body>
+</html>
